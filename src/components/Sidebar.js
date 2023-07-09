@@ -2,6 +2,12 @@ import { Link, NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { FaHammer } from "react-icons/fa";
 import { AiOutlineCloseCircle } from "react-icons/ai";
+import { AiOutlineFieldString } from "react-icons/ai";
+import { BsRegex } from "react-icons/bs";
+import { TbBinary } from "react-icons/tb";
+import { BsFiletypeYml } from "react-icons/bs";
+import { BsFiletypeJson } from "react-icons/bs";
+import { AiOutlineFileGif } from "react-icons/ai";
 
 const HeaderContainer = styled.div`
   display: flex;
@@ -71,34 +77,59 @@ const LinksContainer = styled.div`
   overflow: hidden;
 `;
 
+const links = [
+  { name: "a", path: "/a", icon: <FaHammer /> },
+  { name: "bdddddddddd", path: "/b", icon: <FaHammer /> },
+  {
+    name: "Strings Case Transforms",
+    path: "/strings-case-transform",
+    icon: <AiOutlineFieldString style={{ color: "#4536ff" }} />,
+  },
+  {
+    name: "RegEx Tester",
+    path: "/regex-tester",
+    icon: <BsRegex style={{ color: "yellow" }} />,
+  },
+  {
+    name: "Number Base Transforms",
+    path: "/number-base-transforms",
+    icon: <TbBinary style={{ color: "#f1f1f1" }} />,
+  },
+  {
+    name: ".yml to .json",
+    path: "/yml-to-json",
+    icon: <BsFiletypeYml style={{ color: "#ee22aa" }} />,
+  },
+  {
+    name: ".json to .yml",
+    path: "/json-to-yml",
+    icon: <BsFiletypeJson style={{ color: "#22eeaa" }} />,
+  },
+  {
+    name: ".gif to .png(s)",
+    path: "/gif-to-pngs",
+    icon: <AiOutlineFileGif style={{ color: "#ee1100" }} />,
+  },
+  { name: "c", path: "/c" },
+  { name: "c", path: "/c" },
+  { name: "c", path: "/c" },
+  { name: "c", path: "/c" },
+  { name: "c", path: "/c" },
+  { name: "c", path: "/c" },
+  { name: "c", path: "/c" },
+  { name: "c", path: "/c" },
+  { name: "c", path: "/c" },
+  { name: "c", path: "/c" },
+  { name: "c", path: "/c" },
+  { name: "c", path: "/c" },
+  { name: "c", path: "/c" },
+  { name: "c", path: "/c" },
+  { name: "c", path: "/c" },
+  { name: "c", path: "/c" },
+];
+
 const Sidebar = () => {
   //const { loggedIn, firstName } = useSelector((state) => state.auth);
-  const links = [
-    { name: "a", path: "/a", icon: <FaHammer /> },
-    { name: "bdddddddddd", path: "/b", icon: <FaHammer /> },
-    { name: "c", path: "/c" },
-    { name: "c", path: "/c" },
-    { name: "c", path: "/c" },
-    { name: "c", path: "/c" },
-    { name: "c", path: "/c" },
-    { name: "c", path: "/c" },
-    { name: "c", path: "/c" },
-    { name: "c", path: "/c" },
-    { name: "c", path: "/c" },
-    { name: "c", path: "/c" },
-    { name: "c", path: "/c" },
-    { name: "c", path: "/c" },
-    { name: "c", path: "/c" },
-    { name: "c", path: "/c" },
-    { name: "c", path: "/c" },
-    { name: "c", path: "/c" },
-    { name: "c", path: "/c" },
-    { name: "c", path: "/c" },
-    { name: "c", path: "/c" },
-    { name: "c", path: "/c" },
-    { name: "c", path: "/c" },
-    { name: "c", path: "/c" },
-  ];
 
   return (
     <div>
